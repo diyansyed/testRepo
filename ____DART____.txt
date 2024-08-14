@@ -1,0 +1,76 @@
+____DART____
+
+-> LISTS:
+
+we can use List keyword to store multiple values in a variable 
+
+	List<int> nae=[1,2,3];
+	List<string> names=['ali',[noman'];
+
+but we can cannot store different data types values in a single list through just List keyword,we use VAR or dynamic keywords to do that:
+	var data=[1,2,'nae'];
+	dynamic data2=[1,2,'nae'];
+
+or we can do it like this:
+	List nae=[1,2,3,'nae'];
+  
+
+TO  GET VALUES FROM THE USER:
+
+  	List nae=[];
+
+  	for (int i = 0; i < 5; i++)
+  	{ 
+    		int naee;
+    		print('Enter age:');
+    		naee=int.parse(stdin.readLineSync()!);
+
+  		nae.add(naee);
+  	}
+
+
+TO GET VALUE OF ANY DATA TYPE IN SAME VARIABLE:
+
+	List nae=[];
+
+  	for (int i = 0; i < 5; i++)
+  	{ 
+    		var naee;
+   		print('Enter age:');
+    		naee =stdin.readLineSync();
+
+    		nae.add(naee);
+
+    
+  	}
+
+    
+
+
+_________ ! keyword_________
+
+ this is called null check operator .it is used when you dont want a value to be null so if a value is null due to this key it will through an error  saying that specific variable cannot be null
+
+e.g
+double area= width! * height ;
+
+if the value of width is null so it will throw an  error
+
+______assert method______
+In Dart, assert raises an error if a condition is false; otherwise, it does nothing.
+
+ex:
+ int age = 22;
+   assert(age!=22, "Age must be 22");
+
+______final_______
+final: Used for variables that can only be set once. The value cannot be reassigned after the initial assignment.
+
+
+________ (research)_________
+->  width ?? 0 
+-> exception handling ( try and catch)
+->this
+-> .forEach(element);
+->for in loop;	
+-> required
